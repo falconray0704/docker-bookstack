@@ -27,6 +27,7 @@ RUN set -x; \
         curl \
         libzip-dev \
         unzip \
+    && apt-get install -y ttf-wqy-zenhei fonts-wqy-microhei \
 	&& wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.buster_amd64.deb \
 	&& chmod a+x ./wkhtmltox_0.12.6-1.buster_amd64.deb \
     && apt-get install -y ./wkhtmltox_0.12.6-1.buster_amd64.deb \
